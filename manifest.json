@@ -1,0 +1,17 @@
+{
+  "name": "Netflix auto skip",
+  "version": "1.0.0",
+  "description": "Netflix intro and recap auto skipper",
+  "manifest_version": 2,
+  "permissions": [
+    "webNavigation",
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    { "matches": ["*://*.netflix.com/watch/*"], "js": ["content.js"] }
+  ]
+}

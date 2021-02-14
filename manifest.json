@@ -12,6 +12,6 @@
     "scripts": ["background.js"]
   },
   "content_scripts": [
-    { "matches": ["*://*.netflix.com/watch/*"], "js": ["content.js"] }
+    { "matches": ["*://*.netflix.com/*"], "js": ["content.js"] }
   ]
 }
